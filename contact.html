@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Abir Hasan to discuss web development, projects, and collaboration.">
+
+    <title>Contact Me | Abir Hasan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Abir Hasan<span>.</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu"
+                 aria-label="Main navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="certificates.html" class="nav-link">Certificates</a>
+                <a href="contact.html" class="nav-link active"
+                   aria-current="page">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- CONTACT HERO -->
+        <section class="section hero">
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        GET IN TOUCH
+                    </span>
+
+                    <h1 class="section-title">
+                        Let's Start a
+                        <span class="text-gradient">Conversation.</span>
+                    </h1>
+
+                    <p class="section-description">
+                        Have a project idea, a question, or an opportunity
+                        to discuss? Feel free to reach out. I'd be happy
+                        to connect and hear from you.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT CONTENT -->
+        <section class="section skills-section">
+            <div class="container contact-grid">
+
+                <!-- CONTACT INFORMATION -->
+                <div class="contact-info">
+
+                    <span class="eyebrow">CONTACT INFORMATION</span>
+
+                    <h2 class="section-title">
+                        Let's connect
+                        <span class="text-gradient">together.</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        You can contact me about my projects,
+                        web development, programming, or potential
+                        collaboration.
+                    </p>
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon" aria-hidden="true">
+                            @
+                        </div>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p>Add your email address below.</p>
+                            <a href="mailto:YOUR_EMAIL@example.com">
+                                YOUR_EMAIL@example.com
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon" aria-hidden="true">
+                            ↗
+                        </div>
+
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bangladesh</p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon" aria-hidden="true">
+                            in
+                        </div>
+
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me professionally.</p>
+                            <a href="https://www.linkedin.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Visit LinkedIn
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon" aria-hidden="true">
+                            GH
+                        </div>
+
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>Explore my code and projects.</p>
+                            <a href="https://github.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Visit GitHub
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form-wrapper">
+
+                    <span class="eyebrow">SEND A MESSAGE</span>
+
+                    <h2>Tell me about your idea.</h2>
+
+                    <p class="contact-description">
+                        Fill in the form below to prepare an email message.
+                    </p>
+
+                    <form id="contactForm" class="contact-form">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What would you like to discuss?"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Prepare Email Message
+                        </button>
+
+                        <p id="formStatus"
+                           class="form-status"
+                           role="status"
+                           aria-live="polite">
+                        </p>
+
+                    </form>
+
+                    <p class="form-note">
+                        This demo form opens your default email application.
+                        It does not send or store messages on a server.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section">
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <span class="eyebrow">THANK YOU FOR VISITING</span>
+
+                    <h2>
+                        Every great idea starts
+                        <span class="text-gradient">with a conversation.</span>
+                    </h2>
+
+                    <p>
+                        Explore my portfolio to learn more about
+                        my skills, projects, and learning journey.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn btn-primary">
+                            Explore Projects
+                        </a>
+
+                        <a href="about.html" class="btn btn-outline">
+                            About Me
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <a href="index.html" class="logo footer-logo">
+                Abir Hasan<span>.</span>
+            </a>
+
+            <p>Learning, creating, and growing one project at a time.</p>
+
+            <p class="copyright">
+                &copy; <span id="currentYear"></span> Abir Hasan.
+                All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        const contactForm = document.getElementById("contactForm");
+        const formStatus = document.getElementById("formStatus");
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (!name || !email || !subject || !message) {
+                formStatus.textContent = "Please complete every field.";
+                return;
+            }
+
+            const recipient = "YOUR_EMAIL@example.com";
+
+            if (recipient === "YOUR_EMAIL@example.com") {
+                formStatus.textContent =
+                    "Please replace YOUR_EMAIL@example.com with your real email address in contact.html.";
+                return;
+            }
+
+            const mailSubject = encodeURIComponent(subject);
+            const mailBody = encodeURIComponent(
+                "Name: " + name +
+                "\nEmail: " + email +
+                "\n\nMessage:\n" + message
+            );
+
+            formStatus.textContent =
+                "Opening your email application. Review the message and send it there.";
+
+            window.location.href =
+                "mailto:" + recipient +
+                "?subject=" + mailSubject +
+                "&body=" + mailBody;
+        });
+    </script>
+
+</body>
+</html>
